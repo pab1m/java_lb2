@@ -9,21 +9,21 @@ public class Main {
 
     public static void main(String[] args) {
 
-//        List<Car> cars = new ArrayList<>();
-//        cars.add(new Car(1, "Toyota Camry", 2019, 25000, 1234));
-//        cars.add(new Car(2, "Honda Civic", 2018, 20000, 4321));
-//        cars.add(new Car(3, "Ford Focus", 2020, 22000, 1478));
-//        cars.add(new Car(4, "Chevrolet Malibu", 2017, 18000, 8520));
-//        cars.add(new Car(5, "Toyota Camry", 2022, 30000, 6666));
+        List<Car> cars = new ArrayList<>();
+        cars.add(new Car(1, "Toyota Camry", 2019, 25000, 1234));
+        cars.add(new Car(2, "Honda Civic", 2018, 20000, 4321));
+        cars.add(new Car(3, "Ford Focus", 2020, 22000, 1478));
+        cars.add(new Car(4, "Chevrolet Malibu", 2017, 18000, 8520));
+        cars.add(new Car(5, "Toyota Camry", 2022, 30000, 6666));
 
-        List<Car> cars = setCar();
+//        List<Car> cars = setCar();
 
-        listCarsByModel(cars, "Toyota Camry");
-        listCarsByModelAndYears(cars, "Toyota Camry", 2);
-        listCarsByYearsAndPrice(cars, 2020, 20000);
+        CarsByModel(cars, "Toyota Camry");
+        CarsByModelAndYears(cars, "Toyota Camry", 2);
+        CarsByYearsAndPrice(cars, 2020, 20000);
     }
 
-    public static void listCarsByModel(List<Car> cars, String model) {
+    public static void CarsByModel(List<Car> cars, String model) {
         System.out.println("Список автомобілів моделі " + model + ":");
 
         for (Car car: cars) {
@@ -34,7 +34,7 @@ public class Main {
         System.out.println();
     }
 
-    public static void listCarsByModelAndYears(List<Car> cars, String model, int year){
+    public static void CarsByModelAndYears(List<Car> cars, String model, int year){
         System.out.println("Список автомобілів моделі " + model + ", які експлуатуються більше " + year + " років:");
 
         for (Car car: cars){
@@ -45,7 +45,7 @@ public class Main {
         System.out.println();
     }
 
-    public static void listCarsByYearsAndPrice(List<Car> cars, int year, int price){
+    public static void CarsByYearsAndPrice(List<Car> cars, int year, int price){
         System.out.println("Список автомобілів " + year + "року випуску, ціна яких більше " +  price + ":");
 
         for (Car car: cars){

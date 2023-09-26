@@ -48,6 +48,7 @@ public class Car {
         return price;
     }
 
+
     @Override
     public String toString() {
         return "Id: " + id +
